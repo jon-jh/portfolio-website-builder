@@ -12,6 +12,6 @@ Build a multi‑template website builder app showcasing tools and skills employe
 
 ## Tech Stack
 - HTML5, CSS3, JavaScript (ES6+)
-- React + SCSS
+- Next.js (React Framework) + SCSS
 - WordPress REST API
 - Vercel (deployment) + Neon (database)
