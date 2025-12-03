@@ -1,10 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Button from "./components/Button";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        
         <Image
           className={styles.logo}
           src="/next.svg"
@@ -15,6 +17,7 @@ export default function Home() {
         />
         <div className={styles.intro}>
           <h1>To get started, edit the page.js file.</h1>
+          <Button>This is an SCSS Styled Test Button</Button>
           <p>
             Looking for a starting point or more instructions? Head over to{" "}
             <a

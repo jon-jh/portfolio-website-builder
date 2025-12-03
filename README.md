@@ -25,3 +25,4 @@ Build a multi‑template website builder app showcasing tools and skills employe
 - Deliverable: A clean Next.js boilerplate repo
 
 - Installed Sass (SCSS support). Ran npm audit, which flagged a critical Next.js vulnerability. Upgraded to next@16.0.7 to fix.
+- Added a test component (button) styled with SCSS.
