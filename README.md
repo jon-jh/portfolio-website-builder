@@ -53,7 +53,11 @@ Build a web app that showcases multiple WordPress‑powered templates with moder
 - Initialized new Git repo and linked local folder  
 - Decided on Next.js stack (JavaScript, ESLint, React Compiler, SCSS, App Router, `@/` alias)  
 - Bootstrapped Next.js project with `npx create-next-app@latest`  
-- Deliverable: A clean Next.js boilerplate repo  
+- Deliverable: A clean Next.js boilerplate repo 
 
-- Installed Sass (SCSS support). Ran `npm audit`, which flagged a critical Next.js vulnerability. Upgraded to `next@16.0.7` to fix.  
-- Added a test component (button) styled with SCSS. 
+- Since I already have CSS experience, I will learn SCSS.
+- This project contains only SCSS.
+
+- Installed Sass (SCSS support). Ran `npm audit`, which flagged a critical Next.js vulnerability. Upgraded to `next@16.0.7` to fix.
+
+- Added button and navigation bar components with placeholder links, tested SCSS styling features.
