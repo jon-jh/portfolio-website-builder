@@ -1,4 +1,3 @@
-
 import styles from '../styles/NavBar.module.scss';
 
 const NavBar = () => {
@@ -6,10 +5,12 @@ const NavBar = () => {
     <div className={styles.navbar}>
       <a href="/" className={styles.logo}>StylePress</a>
       <div className={styles.links}>
-        <a href="/placeholder">Option a</a>
-        <a href="/placeholder">Option b</a>
-        <a href="/placeholder">Option c</a>
-        <a href="/placeholder">Option d</a>
+        <a href="/placeholder">Portfolio</a>
+        <a href="/placeholder">E Commerce</a>
+        <a href="/placeholder">Blog</a>
+        <a href="/placeholder">Event</a>
+        <a href="/placeholder">Non-Profit</a>
+        <a href="/placeholder">SaaS</a>
       </div>
       <div className={styles.profile}>
         <img src="/globe.svg" />

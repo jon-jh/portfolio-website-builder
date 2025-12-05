@@ -2,8 +2,8 @@
 $primary-color: #24292e; // GitHub dark gray
 $text-color: #ffffff;
 
-.navbar {
-  top: 0;
+.footer {
+  bottom: 0;
   position: fixed;
   z-index: 1000;
   display: flex;
@@ -27,7 +27,7 @@ $text-color: #ffffff;
   // Navigation links
   .links {
     display: flex;
-    gap: 3em;
+    gap: 16px;
 
     a {
 
@@ -39,18 +39,6 @@ $text-color: #ffffff;
         color: color.adjust($text-color, $lightness: -50%, $space: oklch);
       }
 
-    }
-  }
-
-  // Profile/avatar
-  .profile {
-    margin-left: 20px;
-
-    img {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      cursor: pointer;
     }
   }
 }
