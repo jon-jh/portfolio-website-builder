@@ -1,8 +1,5 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Button from "./components/Button";
-import NavBar from "./components/NavBar";
-
 
 export default function Home() {
   return (
@@ -18,7 +15,6 @@ export default function Home() {
         />
         <div className={styles.intro}>
           <h1>To get started, edit the page.js file.</h1>
-          <Button>Click me!</Button>
           <p>
             Looking for a starting point or more instructions? Head over to{" "}
             <a

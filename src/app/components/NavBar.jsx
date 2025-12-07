@@ -1,21 +1,46 @@
 import styles from '../styles/NavBar.module.scss';
 
 const NavBar = () => {
+  const navigationLinks = [
+    'portfolio',
+    'e-commerce',
+    'blog',
+    'event',
+    'non-profit',
+    'saas'
+  ];
+
   return (
-    <div className={styles.navbar}>
-      <a href="/" className={styles.logo}>StylePress</a>
-      <div className={styles.links}>
-        <a href="/placeholder">Portfolio</a>
-        <a href="/placeholder">E Commerce</a>
-        <a href="/placeholder">Blog</a>
-        <a href="/placeholder">Event</a>
-        <a href="/placeholder">Non-Profit</a>
-        <a href="/placeholder">SaaS</a>
+    <header className={styles.navbar}>
+      <div className={styles.container}>
+        {/* Logo */}
+        <a href="/" className={styles.logo}>
+          StylePress
+        </a>
+
+        {/* Navigation Links */}
+        <nav className={styles.links}>
+          {navigationLinks.map((link, index) => (
+            <a
+              key={link}
+              href={`/${link}`}
+              className={`
+                ${index === 0 ? styles.first : ''}
+                ${index === navigationLinks.length - 1 ? styles.last : ''}
+                ${index !== navigationLinks.length - 1 ? styles.divider : ''}
+              `}
+            >
+              {link}
+            </a>
+          ))}
+        </nav>
+
+        {/* Profile / Avatar */}
+        <div className={styles.profile}>
+          <img src="/globe.svg" alt="Profile" />
+        </div>
       </div>
-      <div className={styles.profile}>
-        <img src="/globe.svg" />
-      </div>
-    </div>
+    </header>
   );
 };
 
