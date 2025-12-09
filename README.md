@@ -41,7 +41,7 @@ Build a web app that showcases multiple WordPress‑powered templates with moder
 ## Phases
 - **Phase 1:** Environment setup + Figma + SCSS [complete]
 - **Phase 2:** WordPress + CMS integration → Deploy [complete]
-- **Phase 2.5:** Design layouts: Portfolio, E-commerce, Blog, Event, Non-Profit, SaaS
+- **Phase 2.5:** Design layouts: Portfolio, E-commerce, Blog, Event
 - **Phase 3:** Performance audits (Lighthouse, GTmetrix) + cross‑browser testing → E‑commerce page  
 - **Phase 4:** Analytics (GA4, GTM, HotJar) → Event landing page  
 - **Phase 5:** Accessibility (WCAG, ARIA) + SEO (Core Web Vitals, meta tags) → Non‑profit page  
@@ -79,4 +79,5 @@ Build a web app that showcases multiple WordPress‑powered templates with moder
 - **Deployed** main branch with Vercel, created a development branch for future work.
 
 ### Phase 2.5: Design Layouts
-- Portfolio, E-commerce, Blog [complete], Event, Non-Profit, SaaS
+- Portfolio, E-commerce, Blog [complete], Event
+- Narrow scope of project due to other projects already showcasing SaaS (Stripe Integration in Everstride App) and remove unnecessary pages for Minimum Viable Product speed.

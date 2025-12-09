@@ -5,9 +5,7 @@ const NavBar = () => {
     'portfolio',
     'e-commerce',
     'blog',
-    'event',
-    'non-profit',
-    'saas'
+    'event'
   ];
 
   return (
