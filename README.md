@@ -81,3 +81,4 @@ Build a web app that showcases multiple WordPress‑powered templates with moder
 ### Phase 2.5: Design Layouts
 - Portfolio, E-commerce, Blog [complete], Event
 - Narrow scope of project due to other projects already showcasing SaaS (Stripe Integration in Everstride App) and remove unnecessary pages for Minimum Viable Product speed.
+- Added default style reset to fix the navigation bar: border-box, body-padding-top:60px, and margin-0.
