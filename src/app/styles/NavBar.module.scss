@@ -1,22 +1,16 @@
 @use "sass:color";
 
-$slate: #1e293b; // Tailwind slate-800
-$indigo: #6366f1; // Tailwind indigo-500
 $text-color: #ffffff;
 
 .navbar {
+  box-sizing: border-box;
   position: sticky;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 1000;
   padding: 1.5rem;
   width: 100%;
-  background: linear-gradient(
-    to right,
-    rgba($slate, 0.95),
-    rgba($indigo, 0.85)
-  );
-  box-shadow: 0 4px 12px rgba($indigo, 0.25); // colour-shadow-blur under NavBar
   backdrop-filter: blur(12px); // matches backdrop-blur-md
 
   .links {
@@ -33,6 +27,7 @@ $text-color: #ffffff;
   }
 
   .logo {
+    color: $text-color;
     border-bottom-left-radius: 1.5rem;
     border-top-left-radius: 1.5rem;
   }
