@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import LoadingBar from "../components/LoadingBar";
+import Card from "../components/Card";
 
 export default function BlogPage() {
   const [posts, setPosts] = useState([]);
@@ -29,7 +30,7 @@ export default function BlogPage() {
     <main>
       <h1>Blog</h1>
 
-      {loading}
+      {loading && <p>Loading...</p>}
 
       {/* LoadingBar handles countdown + refresh */}
       <LoadingBar interval={60} onRefresh={loadPosts} />
@@ -37,14 +38,14 @@ export default function BlogPage() {
       {posts.length === 0 && !loading ? (
         <p>No posts found.</p>
       ) : (
-        <ul>
+        <div className="posts">
           {posts.map((post) => (
-            <li key={post.ID}>
+            <Card key={post.ID}>
               <h2 dangerouslySetInnerHTML={{ __html: post.title }} />
               <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
-            </li>
+            </Card>
           ))}
-        </ul>
+        </div>
       )}
     </main>
   );
