@@ -1,3 +1,6 @@
+@use "sass:color";
+$hover-color:#fda4af;
+
 .button {
   position: relative;
 
@@ -14,8 +17,8 @@
   text-align: left;
 
   &:hover {
-    border-color: #fda4af; /* rose-300 */
-    color: #fda4af;
+    border-color: $hover-color; /* rose-300 */
+    color: $hover-color;
   }
 
   /* violet orb */
@@ -42,7 +45,7 @@
     right: 2rem;
     top: 0.75rem;
     z-index: 0;
-    background-color: #fda4af; /* rose-300 */
+    background-color: $hover-color; /* rose-300 */
     border-radius: 50%;
     filter: blur(16px);
     transition: all 0.7s ease;
@@ -61,7 +64,7 @@
 }
 
 .active {
-  border-color: #fda4af;
-  color: #fda4af;
+  border-color: $hover-color;
+  color: $hover-color;
   background: linear-gradient(135deg, #4c1d95, #f43f5e);
 }

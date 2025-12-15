@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import LoadingBar from "../components/LoadingBar";
 import Card from "../components/Card";
+import styles from "../styles/BlogPage.module.scss";
 
 export default function BlogPage() {
   const [posts, setPosts] = useState([]);
@@ -28,9 +29,9 @@ export default function BlogPage() {
 
   return (
     <main>
-      <h1>Blog</h1>
+      <h1>This content is pulled from a WordPress endpoint.</h1>
 
-      {loading && <p>Loading...</p>}
+      {loading}
 
       {/* LoadingBar handles countdown + refresh */}
       <LoadingBar interval={60} onRefresh={loadPosts} />
@@ -38,7 +39,7 @@ export default function BlogPage() {
       {posts.length === 0 && !loading ? (
         <p>No posts found.</p>
       ) : (
-        <div className="posts">
+        <div className={styles.posts}>
           {posts.map((post) => (
             <Card key={post.ID}>
               <h2 dangerouslySetInnerHTML={{ __html: post.title }} />

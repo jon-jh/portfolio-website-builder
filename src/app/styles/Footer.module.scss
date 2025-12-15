@@ -1,8 +1,7 @@
 @use "sass:color";
-
-$emerald: #10b981; // Tailwind emerald-500
-$text-gray: #9ca3af; // Tailwind gray-400
+$hover-color: #fda4af;
 $text-color: #ffffff;
+$highlight: #21436b;
 
 .footer {
   background: rgba($text-color, 0.05);
@@ -20,9 +19,9 @@ $text-color: #ffffff;
 
   // Left text block
   .info {
-    color: $text-gray;
+    background-color: $highlight;
+    color: $text-color;
     letter-spacing: 0.05em; // tracking-wide
-    border: 1px solid rgba($text-color, 0.3);
     padding: 0.5rem 1rem; // py-2 px-4
     border-radius: 1.5rem; // rounded-3xl
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -34,9 +33,9 @@ $text-color: #ffffff;
     gap: 1.5rem; // gap-6
 
     a {
-      color: $text-gray;
+      background-color: $highlight;
+      color: $text-color;
       letter-spacing: 0.05em;
-      border: 1px solid rgba($text-color, 0.3);
       padding: 0.5rem 1rem; // py-2 px-4
       border-radius: 1.5rem;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -44,7 +43,7 @@ $text-color: #ffffff;
       transition: color 0.3s ease;
 
       &:hover {
-        color: $emerald;
+        color: $hover-color;
       }
     }
   }

@@ -1,6 +1,7 @@
 @use "sass:color";
 
 $text-color: #ffffff;
+$highlight: #21436b;
 
 .navbar {
   box-sizing: border-box;
@@ -30,6 +31,7 @@ $text-color: #ffffff;
     color: $text-color;
     border-bottom-left-radius: 1.5rem;
     border-top-left-radius: 1.5rem;
+    text-decoration: none;
   }
   .profile {
     border-bottom-right-radius: 1.5rem;
@@ -39,12 +41,12 @@ $text-color: #ffffff;
   // Logo & profile elements
   .logo,
   .profile {
+    background-color: $highlight;
     height: stretch; // fill the content height set by the buttons padding
     width: 10em; // match link/buttons width
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba($text-color, 0.3);
     padding: 0.125rem; // p-0.5
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background 0.3s ease;

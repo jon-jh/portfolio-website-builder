@@ -77,6 +77,8 @@ body {
 }
 
 main {
+  padding-left: 10px;
+  padding-right: 10px;
   flex: 1; // expands to fill space between NavBar and Footer
   align-self: center;
 }
