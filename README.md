@@ -41,11 +41,11 @@ Build a web app that showcases multiple WordPress‑powered templates with moder
 ## Phases
 - **Phase 1:** Environment setup + Figma + SCSS [complete]
 - **Phase 2:** WordPress + CMS integration → Deploy [complete]
-- **Phase 2.5:** Design layouts: Portfolio, E-commerce, Blog, Event
+- **Phase 2.5:** Design layouts. [complete]
 - **Phase 3:** Performance audits (Lighthouse, GTmetrix) + cross‑browser testing → E‑commerce page  
 - **Phase 4:** Analytics (GA4, GTM, HotJar) → Event landing page  
 - **Phase 5:** Accessibility (WCAG, ARIA) + SEO (Core Web Vitals, meta tags) → Non‑profit page  
-- **Phase 6:** AI tools (GitHub Copilot, AI checkers) → SaaS marketing page + case study
+- **Phase 6:** AI tools (GitHub Copilot, AI checkers) [complete]
 
 
 ## Progress  
@@ -79,7 +79,10 @@ Build a web app that showcases multiple WordPress‑powered templates with moder
 - **Deployed** main branch with Vercel, created a development branch for future work.
 
 ### Phase 2.5: Design Layouts
-- Portfolio, E-commerce, Blog [complete], Event
-- Narrow scope of project due to other projects already showcasing SaaS (Stripe Integration in Everstride App) and remove unnecessary pages for Minimum Viable Product speed.
+- Portfolio, E-commerce, Blog, Event
 - Added default style reset to fix the navigation bar: border-box, body-padding-top:60px, and margin-0.
-- Used free available **Animation** buttons to restyle NavBar and improve layout.
+- Restyled the NavBar using free **animation** buttons for a smoother layout.  
+- Added free **Tailwind** styled cards to the WordPress page.  
+- Completed the WordPress page design with new animations from **UIVerse**.  
+- Converted Tailwind components into **SCSS modules** to align with project standards.  
+- Implemented **animated placeholders** across all pages for a dynamic user experience.  

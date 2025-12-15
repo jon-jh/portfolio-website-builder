@@ -14,7 +14,9 @@ const Card = ({ children }) => {
           />
           <div>
             <div className={styles.card__name}>Jon</div>
-            <div className={styles.card__handle}>@jonathan-dh</div>
+            <div className={styles.card__handle}>
+              /in/jonathan-dh
+            </div>
           </div>
         </div>
         <button className={styles.card__button}>Options</button>

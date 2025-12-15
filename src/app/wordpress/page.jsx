@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import LoadingBar from "../components/LoadingBar";
 import Card from "../components/Card";
 import styles from "../styles/BlogPage.module.scss";
+import SpinBlock from "../components/SpinBlock";
 
 export default function BlogPage() {
   const [posts, setPosts] = useState([]);
@@ -29,7 +30,7 @@ export default function BlogPage() {
 
   return (
     <main>
-      <h1>This content is pulled from a WordPress endpoint.</h1>
+      <h1>This content is pulled from a WordPress endpoint. <span className="inline-spin"><SpinBlock/></span></h1>
 
       {loading}
 

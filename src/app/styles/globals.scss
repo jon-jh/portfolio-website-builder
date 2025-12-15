@@ -1,3 +1,17 @@
+.spinblock-center-wrapper {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  min-height: 50vh;        /* adjust height, 50% viewport here */
+}
+.inline-spin {
+  display: inline-block;      /* keeps it on the same line */
+  vertical-align: middle;     /* aligns with text baseline */
+  margin-left: 0.5rem;        /* spacing between text and loader */
+  transform: scale(0.5);
+}
+
+
 // Global dark theme variables (always applied)
 :root {
   --font-size: 16px;
