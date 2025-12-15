@@ -2,10 +2,10 @@
 import { useEffect, useState } from "react";
 import LoadingBar from "../components/LoadingBar";
 import Card from "../components/Card";
-import styles from "../styles/BlogPage.module.scss";
+import styles from "../styles/WordpressPage.module.scss";
 import SpinBlock from "../components/SpinBlock";
 
-export default function BlogPage() {
+export default function WordpressPage() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -29,26 +29,33 @@ export default function BlogPage() {
   }, []);
 
   return (
-    <main>
-      <h1>This content is pulled from a WordPress endpoint. <span className="inline-spin"><SpinBlock/></span></h1>
+    <section data-bg="wordpress-bg">
+      <main>
+        <h1>
+          This content is pulled from a WordPress endpoint.{" "}
+          <span className="inline-spin">
+            <SpinBlock />
+          </span>
+        </h1>
 
-      {loading}
+        {loading}
 
-      {/* LoadingBar handles countdown + refresh */}
-      <LoadingBar interval={60} onRefresh={loadPosts} />
+        {/* LoadingBar handles countdown + refresh */}
+        <LoadingBar interval={60} onRefresh={loadPosts} />
 
-      {posts.length === 0 && !loading ? (
-        <p>No posts found.</p>
-      ) : (
-        <div className={styles.posts}>
-          {posts.map((post) => (
-            <Card key={post.ID}>
-              <h2 dangerouslySetInnerHTML={{ __html: post.title }} />
-              <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
-            </Card>
-          ))}
-        </div>
-      )}
-    </main>
+        {posts.length === 0 && !loading ? (
+          <p>No posts found.</p>
+        ) : (
+          <div className={styles.posts}>
+            {posts.map((post) => (
+              <Card key={post.ID}>
+                <h2 dangerouslySetInnerHTML={{ __html: post.title }} />
+                <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+              </Card>
+            ))}
+          </div>
+        )}
+      </main>
+    </section>
   );
 }

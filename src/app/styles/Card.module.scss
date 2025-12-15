@@ -1,9 +1,12 @@
+@use "sass:color";
+$app-box-shadow: 5 5px 5px rgba(0, 0, 0, 1);
+
 .card {
   width: 100%;
   max-width: 28rem; /* max-w-md */
   background-color: #ffffff;
-  border-radius: 0.75rem; /* rounded-xl */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* shadow-md */
+  border-radius: 2rem; /* rounded-xl */
+  box-shadow: $app-box-shadow;
   overflow: hidden;
   margin: 0 auto;
 
@@ -53,7 +56,7 @@
     align-items: center;
     justify-content: space-between;
     height: 2.5rem; /* h-10 */
-    padding: 0.5rem 0.75rem; /* px-3 py-2 */
+    padding: 1rem 0.75rem; /* px-3 py-2 */
     font-size: 0.875rem;
     border-radius: 0.375rem; /* rounded-md */
     border: 1px solid #d1d5db; /* border-input */

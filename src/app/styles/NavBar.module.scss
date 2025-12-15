@@ -1,5 +1,6 @@
 @use "sass:color";
 
+$app-box-shadow: 5 5px 5px rgba(0, 0, 0, 1);
 $text-color: #ffffff;
 $highlight: #21436b;
 
@@ -43,8 +44,9 @@ $highlight: #21436b;
   .profile {
     background-color: $highlight;
     height: stretch; // fill the content height set by the buttons padding
-    width: 10em; // match link/buttons width
+    max-width: 20em; // grow with page
     display: flex;
+    flex: 1;
     align-items: center;
     justify-content: center;
     padding: 0.125rem; // p-0.5

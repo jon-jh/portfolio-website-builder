@@ -1,12 +1,19 @@
+@use "sass:color";
+$app-box-shadow: 5 5px 5px rgba(0, 0, 0, 1);
+
 .reloadContainer {
+  padding: 0 0.5rem;
   display: flex;
+  background-color: #1f2937;
+  border-radius: 2rem; /* rounded-xl */
+  box-shadow: $app-box-shadow;
   align-items: center;
-  gap: 12px;
-  margin: 10px 0;
+  gap: 2rem;
+  margin: 2rem 10rem;
 
   .reloadText {
     font-size: 14px;
-    color: #555;
+    color: #eee;
     white-space: nowrap;
   }
 

@@ -28,7 +28,7 @@ export default function LoadingBar({ interval = 60, onRefresh }) {
   return (
     <div className={styles.reloadContainer}>
       <span className={styles.reloadText}>
-        Check https://stylepress4.wordpress.com/ each 60s
+        https://stylepress4.wordpress.com/
       </span>
       <div className={styles.progressBar}>
         <div

@@ -7,7 +7,7 @@ import NavButton from "./NavButton"; // import your new component
 
 const NavBar = () => {
   const pathname = usePathname();
-  const navigationLinks = ["portfolio", "e-commerce", "wordpress", "event"];
+  const navigationLinks = ["portfolio", "e-commerce", "wordpress"];
 
   return (
     <header className={styles.navbar}>

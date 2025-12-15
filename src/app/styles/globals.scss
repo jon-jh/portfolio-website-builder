@@ -1,16 +1,37 @@
+@use "sass:color";
+$app-box-shadow: 5 5px 5px rgba(0, 0, 0, 1);
+
+.bg-layer {
+  position: fixed;
+  inset: 0; /* top:0 right:0 bottom:0 left:0 */
+  z-index: -10; /* behind all content */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body:has([data-bg="portfolio-bg"]) .bg-layer {
+  background-image: url("/images/bac-3.jpg");
+}
+body:has([data-bg="ecommerce-bg"]) .bg-layer {
+  background-image: url("/images/bac-1.jpg");
+}
+body:has([data-bg="wordpress-bg"]) .bg-layer {
+  background-image: url("/images/bac-2.jpg");
+}
+
 .spinblock-center-wrapper {
   display: flex;
   justify-content: center; /* horizontal center */
-  align-items: center;     /* vertical center */
-  min-height: 50vh;        /* adjust height, 50% viewport here */
+  align-items: center; /* vertical center */
+  min-height: 50vh; /* adjust height, 50% viewport here */
 }
 .inline-spin {
-  display: inline-block;      /* keeps it on the same line */
-  vertical-align: middle;     /* aligns with text baseline */
-  margin-left: 0.5rem;        /* spacing between text and loader */
+  display: inline-block; /* keeps it on the same line */
+  vertical-align: middle; /* aligns with text baseline */
+  margin-left: 0.5rem; /* spacing between text and loader */
   transform: scale(0.5);
 }
-
 
 // Global dark theme variables (always applied)
 :root {
@@ -78,8 +99,6 @@ body {
   height: 100%; // ensure full viewport height
   width: 100%;
   overflow-x: hidden; /* removes horizontal scroll bar */
-
-
 }
 
 body {
@@ -94,9 +113,21 @@ main {
   padding-left: 10px;
   padding-right: 10px;
   flex: 1; // expands to fill space between NavBar and Footer
-  align-self: center;
+  justify-self: center;
 }
 
+h1, p {
+  justify-self: center;
+  background-color: #1f2937;
+  border-radius: 2rem; /* rounded-xl */
+  box-shadow: $app-box-shadow;
+  padding: 0 1rem;
+}
+
+
 footer {
-  margin-top: auto; // anchors footer at the bottom
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }

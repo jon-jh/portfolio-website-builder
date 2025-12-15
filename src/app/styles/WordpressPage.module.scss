@@ -1,0 +1,9 @@
+.posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); // exactly 2 per row
+  gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; // stack on smaller screens
+  }
+}
