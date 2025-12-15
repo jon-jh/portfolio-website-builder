@@ -10,6 +10,14 @@ $app-box-shadow: 5 5px 5px rgba(0, 0, 0, 1);
   overflow: hidden;
   margin: 0 auto;
 
+  h1,
+  p {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
   @media (prefers-color-scheme: dark) {
     background-color: #1f2937; /* gray-800 */
   }

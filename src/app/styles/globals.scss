@@ -116,14 +116,14 @@ main {
   justify-self: center;
 }
 
-h1, p {
+h1,
+p {
   justify-self: center;
   background-color: #1f2937;
-  border-radius: 2rem; /* rounded-xl */
+  border-radius: 2rem;
   box-shadow: $app-box-shadow;
   padding: 0 1rem;
 }
-
 
 footer {
   position: fixed;
