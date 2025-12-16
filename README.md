@@ -1,3 +1,8 @@
+| Portrait | Wide |
+|----------|------|
+| <a href="docs/screenshots/figma-to-code.jpg"><img src="docs/screenshots/figma-to-code.jpg" width="300"/></a><br/>Designing in Figma | <a href="docs/screenshots/screenshot.jpg"><img src="docs/screenshots/screenshot.jpg" width="600"/></a><br/>WordPress dynamic data |
+
+
 ## Goal
 Build an app using popular tools and frameworks to demonstrate adaptability.
 
